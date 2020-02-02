@@ -2,11 +2,36 @@
   .converter-conversion__title
     湿度変換
   .converter-conversion__explane
-    温度と相対湿度を入力し容積絶対湿度と露点温度に変換
-  .converter-conversion__input
-    .converter-conversion__input__left
-      測りたい空気
-      #convert_humidity_js_container
-    .converter-conversion__input__right
-      比べたい空気
-      #convert_humidity_forecast_js_container
+    温度と相対湿度を入力し、露点温度と空気中の水分量（容積絶対湿度）に変換
+  .converter-conversion__left
+    測りたい空気
+    .converter-conversion__left__input
+      = form_with do |f|
+        .converter-conversion__left__input__temp
+          = f.label :temp1 do
+            温度
+            = f.text_field :temp1,
+              id: "temp1",
+              placeholder: "半角数字（-70〜350）",
+              autofocus: true
+            -# 特殊文字コードで記載　℃
+            &deg;C
+        .converter-conversion__left__input__rh
+          = f.label :rh1 do
+            相対湿度
+            = f.text_field :rh1,
+              id: "rh1",
+              placeholder: "半角数字（0〜100）",
+              autofocus: true
+            -# 特殊文字コードで記載　％
+            &#37
+      %button#convert1
+        変換する
+    .converter-conversion__left__output__tempdp
+      露点温度
+      #tempdp1
+      &deg;CDP
+    .converter-conversion__left__output__abt
+      空気中の水分量
+      #abt1
+      g/m&sup3;

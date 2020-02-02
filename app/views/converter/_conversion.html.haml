@@ -35,3 +35,34 @@
       空気中の水分量
       #abt1
       g/m&sup3;
+  .converter-conversion__right
+    比べたい空気
+    = form_with do |f|
+      .converter-conversion__right__temp
+        = f.label :temp2 do
+          温度
+          = f.text_field :temp2,
+            id: "temp2",
+            placeholder: "半角数字（-70〜350）",
+            autofocus: true
+          -# 特殊文字コードで記載　℃
+          &deg;C
+      .converter-conversion__right__rh
+        = f.label :rh2 do
+          相対湿度
+          = f.text_field :rh2,
+            id: "rh2",
+            placeholder: "半角数字（0〜100）",
+            autofocus: true
+          -# 特殊文字コードで記載　％
+          &#37
+    %button#convert2
+      変換する
+    .converter-conversion__left__output__tempdp
+      露点温度
+      #tempdp2
+      &deg;CDP
+    .converter-conversion__left__output__abt
+      空気中の水分量
+      #abt2
+      g/m&sup3;

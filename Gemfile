@@ -57,3 +57,4 @@ gem 'jquery-rails'
 gem 'font-awesome-sass'
 
 gem 'gon'
+gem 'dotenv-rails'

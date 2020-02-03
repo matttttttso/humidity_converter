@@ -1,7 +1,7 @@
 $(function(){
   $('#temp2,#rh2').keyup(function(){
     // 正規表現　マイナス符号、半角数字、少数点
-    this.value = this.value.replace(/[^-+0-9.]+/i,'');
+    this.value = this.value.replace(/[^-+0-9.]+/,'');
   });
 
   $('#convert2').on('click',function () {

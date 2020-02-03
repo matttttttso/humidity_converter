@@ -3,66 +3,91 @@
     湿度変換
   .converter-conversion__explane
     温度と相対湿度を入力し、露点温度と空気中の水分量（容積絶対湿度）に変換
-  .converter-conversion__left
-    測りたい空気
-    .converter-conversion__left__input
+  .converter-conversion__main
+    .converter-conversion__main__left
+      測りたい空気
       = form_with do |f|
-        .converter-conversion__left__input__temp
-          = f.label :temp1 do
-            温度
+        = f.label :temp1 do
+          .converter-conversion__main__left__box
+            .converter-conversion__main__left__box__label
+              温度
             = f.text_field :temp1,
               id: "temp1",
-              placeholder: "半角数字（-70〜350）",
+              class: "converter-conversion__main__left__box__value",
+              placeholder: "-70〜350",
               autofocus: true
-            -# 特殊文字コードで記載　℃
-            &deg;C
-        .converter-conversion__left__input__rh
-          = f.label :rh1 do
-            相対湿度
+            .converter-conversion__main__left__box__unit
+              -# 特殊文字コードで記載　℃
+              &deg;C
+        = f.label :rh1 do
+          .converter-conversion__main__left__box
+            .converter-conversion__main__left__box__label
+              相対湿度
             = f.text_field :rh1,
               id: "rh1",
-              placeholder: "半角数字（0〜100）",
+              class: "converter-conversion__main__left__box__value",
+              placeholder: "0〜100",
               autofocus: true
-            -# 特殊文字コードで記載　％
-            &#37
+            .converter-conversion__main__left__box__unit
+              -# 特殊文字コードで記載　％
+              &#37
       %button#convert1
         変換する
-    .converter-conversion__left__output__tempdp
-      露点温度
-      #tempdp1
-      &deg;CDP
-    .converter-conversion__left__output__abt
-      空気中の水分量
-      #abt1
-      g/m&sup3;
-  .converter-conversion__right
-    比べたい空気
-    = form_with do |f|
-      .converter-conversion__right__temp
-        = f.label :temp2 do
-          温度
-          = f.text_field :temp2,
-            id: "temp2",
-            placeholder: "半角数字（-70〜350）",
-            autofocus: true
-          -# 特殊文字コードで記載　℃
-          &deg;C
-      .converter-conversion__right__rh
-        = f.label :rh2 do
-          相対湿度
-          = f.text_field :rh2,
-            id: "rh2",
-            placeholder: "半角数字（0〜100）",
-            autofocus: true
+      .converter-conversion__main__left__box
+        .converter-conversion__main__left__box__label
+          露点温度
+        .converter-conversion__main__left__box__value#tempdp1
+        .converter-conversion__main__left__box__unit
           -# 特殊文字コードで記載　％
-          &#37
-    %button#convert2
-      変換する
-    .converter-conversion__left__output__tempdp
-      露点温度
-      #tempdp2
-      &deg;CDP
-    .converter-conversion__left__output__abt
-      空気中の水分量
-      #abt2
-      g/m&sup3;
+          &deg;CDP
+      .converter-conversion__main__left__box
+        .converter-conversion__main__left__box__label
+          空気中の水分量
+        .converter-conversion__main__left__box__value#abt1
+        .converter-conversion__main__left__box__unit
+          -# 特殊文字コードで記載　％
+          g/m&sup3;
+          
+    .converter-conversion__main__right
+      比べたい空気
+      = form_with do |f|
+        = f.label :temp2 do
+          .converter-conversion__main__right__box
+            .converter-conversion__main__right__box__label
+              温度
+            = f.text_field :temp2,
+              id: "temp2",
+              class: "converter-conversion__main__right__box__value",
+              placeholder: "-70〜350",
+              autofocus: true
+            .converter-conversion__main__right__box__unit
+              -# 特殊文字コードで記載　℃
+              &deg;C
+        = f.label :rh2 do
+          .converter-conversion__main__right__box
+            .converter-conversion__main__right__box__label
+              相対湿度
+            = f.text_field :rh2,
+              id: "rh2",
+              class: "converter-conversion__main__right__box__value",
+              placeholder: "0〜100",
+              autofocus: true
+            .converter-conversion__main__right__box__unit
+              -# 特殊文字コードで記載　％
+              &#37
+      %button#convert2
+        変換する
+      .converter-conversion__main__right__box
+        .converter-conversion__main__right__box__label
+          露点温度
+        .converter-conversion__main__right__box__value#tempdp2
+        .converter-conversion__main__right__box__unit
+          -# 特殊文字コードで記載　％
+          &deg;CDP
+      .converter-conversion__main__right__box
+        .converter-conversion__main__right__box__label
+          空気中の水分量
+        .converter-conversion__main__right__box__value#abt2
+        .converter-conversion__main__right__box__unit
+          -# 特殊文字コードで記載　％
+          g/m&sup3;

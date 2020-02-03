@@ -5,8 +5,19 @@ $(function(){
   });
 
   $('#convert2').on('click',function () {
-    let temp2 = Number($('#temp2').val()),
-        rh2 = Number($('#rh2').val());
+    let temp2 = Number($('#temp2').val());
+    let rh2 = Number($('#rh2').val());
+    var a,
+        m,
+        tn,
+        c,
+        pws,
+        pw,
+        tempdp2,
+        abt2,
+        tempdp2Round,
+        abt2Round;
+    
     if( $('#temp2').val() == "" || $('#rh2').val() == ""){
       alert("エラー：温度と相対湿度は必須です");
       $('#tempdp1').text("");

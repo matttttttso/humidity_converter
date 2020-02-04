@@ -1,5 +1,16 @@
 # Humidity Converter
 
+### 目次
+
+- [概要](https://github.com/matttttttso/humidity_converter#%E6%A6%82%E8%A6%81)
+- [背景](https://github.com/matttttttso/humidity_converter#%E8%83%8C%E6%99%AF)
+- [開発環境・使用ツール](https://github.com/matttttttso/humidity_converter#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E4%BD%BF%E7%94%A8%E3%83%84%E3%83%BC%E3%83%AB)
+- [実装済みの主な機能](https://github.com/matttttttso/humidity_converter#%E5%AE%9F%E8%A3%85%E6%B8%88%E3%81%BF%E3%81%AE%E4%B8%BB%E3%81%AA%E6%A9%9F%E8%83%BD)
+- [今後実装していきたい機能](https://github.com/matttttttso/humidity_converter#%E4%BB%8A%E5%BE%8C%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%A6%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84%E6%A9%9F%E8%83%BD)
+- [使用例][使用例]
+
+[使用例]:https://github.com/matttttttso/humidity_converter#%E4%BD%BF%E7%94%A8%E4%BE%8B
+
 ## 概要
 
 このアプリは温度と相対湿度の値を入力すると、露点温度と絶対湿度（水分量）に変換する機能が主な機能です。
@@ -10,7 +21,7 @@
 **絶対湿度**、
 **露点温度**
 という値。皆さんは普段使用しますでしょうか？  
-普段使用するのは天気予報等で聞く、温度[℃]と相対湿度[%]だと思いますが、露点温度と絶対湿度を用いると２つの環境の湿度を正確に比較しやすくなります。（[具体例は下部](https://github.com/matttttttso/humidity_converter#%E4%BD%BF%E7%94%A8%E4%BE%8B)）  
+普段使用するのは天気予報等で聞く、温度[℃]と相対湿度[%]だと思いますが、露点温度と絶対湿度を用いると２つの環境の湿度を正確に比較しやすくなります。（[具体例は下部][使用例]）  
 アプリでは比べやすいよう２つ入力エリアを設けています。室内に温湿度計がある場合はその値を入力してみましょう。  
 また、温湿度計が１つしか無いという方、外の温湿度をざっくりと知りたい方は、下部の天気予報エリアで温湿度を取得しましょう。
 
@@ -93,3 +104,5 @@
 
   予想：室内のほうが相対湿度低いので室内のほうが絶対湿度も低い？？  
   -> はずれ：室内のほうが絶対湿度は高い（湿気が多い）
+
+[上に戻る](https://github.com/matttttttso/humidity_converter#humidity-converter)

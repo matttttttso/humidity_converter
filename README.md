@@ -105,4 +105,4 @@
   予想：室内のほうが相対湿度低いので室内のほうが絶対湿度も低い？？  
   -> はずれ：室内のほうが絶対湿度は高い（湿気が多い）
 
-[上に戻る](https://github.com/matttttttso/humidity_converter#humidity-converter)
+[目次に戻る](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E7%9B%AE%E6%AC%A1)

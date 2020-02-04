@@ -1,0 +1,45 @@
+.converter-forecast
+  .converter-forecast__title
+    現在の天気予報データを取得
+  .converter-forecast__main
+    .converter-forecast__main__left
+      = form_with do |f|
+        = f.select :location,
+          [["福津市", 1863978],
+          ["北九州市", 1859307],
+          ["福岡市", 1863967],
+          ["飯塚市", 1861835],
+          ["久留米市", 1858088],
+          ["北海道", 2130037]],
+          { prompt: "地域を選択" },
+          { autofocus: true,
+            name: "location",
+            class: "converter-forecast__main__left__select" }
+      %button.converter-forecast__main__left__button#get-forecast
+        %i.fas.fa-sun.fa-spin
+        天気を表示
+        %i.fas.fa-sun.fa-spin
+      .converter-forecast__main__left__box
+        .converter-forecast__main__left__box__label
+          地名
+        .converter-forecast__main__left__box__value#location
+      .converter-forecast__main__left__box
+        .converter-forecast__main__left__box__label
+          天気
+        .converter-forecast__main__left__box__value#description
+      .converter-forecast__main__left__box__icon#icon
+        %i.fas.fa-sun.fa-spin
+      .converter-forecast__main__left__box
+        .converter-forecast__main__left__box__label
+          温度
+        .converter-forecast__main__left__box__value#forecast-temp
+        .converter-forecast__main__left__box__unit
+          -# 特殊文字コードで記載　℃
+          &deg;C
+      .converter-forecast__main__left__box
+        .converter-forecast__main__left__box__label
+          相対湿度
+        .converter-forecast__main__left__box__value#forecast-rh
+        .converter-forecast__main__left__box__unit
+          -# 特殊文字コードで記載　％
+          &#37

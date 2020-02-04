@@ -16,9 +16,10 @@
   border-color: rgb(38, 71, 116);
   border-style: solid;
   border-width: 1px;
+  border-radius: 5px;
   min-height: 300px;
   &__title{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
   }
@@ -41,25 +42,26 @@
       border-color: rgb(38, 71, 116);
       border-style: solid;
       border-width: 1px;
+      border-radius: 5px;
       &__box{
         display: flex;
         justify-content: space-between;
         padding-top: 5px;
+        line-height: 30px;
         &__label{
           min-width: 140px;
           width: calc(50% - 50px);
-          line-height: 30px;
           padding-left: 10px;
         }
         &__value{
           width: 50%;
           text-align: right;
+          border-radius: 2px;
         }
         &__unit{
           width: 46px;
           padding-left: 4px;
           text-align: left;
-          line-height: 30px;
         }
       }
       button{
@@ -89,6 +91,7 @@
       border-color: rgb(122, 58, 15);
       border-style: solid;
       border-width: 1px;
+      border-radius: 5px;
       &__box{
         display: flex;
         justify-content: space-between;
@@ -102,6 +105,7 @@
         &__value{
           width: 50%;
           text-align: right;
+          border-radius: 2px;
         }
         &__unit{
           width: 46px;

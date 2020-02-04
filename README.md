@@ -47,7 +47,9 @@
 - nginx
 - Capistrano
 - Unicorn
-- WebAPI ([OpenWetherMap](https://openweathermap.org/api))
+- WebAPI ([OpenWetherMap](https://openweathermap.org/api)) 
+
+※露点温度、絶対湿度の換算は[Vaisala社](https://www.vaisala.com/ja)の[湿度計算の計算式集](https://www.vaisala.com/sites/default/files/documents/Humidity_Conversion_Formulas_B210973JA-F.pdf)の式を利用しています。 計算誤差はありますので利用方法によっては信頼性が足りない場合もございます。「湿度計算式」と検索するといろいろな計算式が見つかります。
 
 ## 実装済みの主な機能
 

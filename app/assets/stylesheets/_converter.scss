@@ -3,13 +3,14 @@
   display: flex;
   justify-content: center;
   &__title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
   }
 }
 .converter-conversion{
   width: 90vw;
-  margin: 10px auto;
+  min-width: 300px;
+  margin: 0 auto 10px;
   padding: 10px;
   background-color: rgba(38, 71, 116, 0.6);
   text-align: center;
@@ -17,14 +18,13 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  min-height: 300px;
   &__title{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
   }
   &__explane{
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   &__main{

@@ -1,0 +1,89 @@
+.converter-forecast{
+  width: 90vw;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(190, 92, 26, 0.6);
+  text-align: center;
+  border-color: rgb(122, 58, 15);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  min-height: 300px;
+  &__title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__left{
+      text-align: leftZ;
+      width: 25%;
+      max-width: 50vw;
+      min-width: 300px;
+      background-color: rgba(190, 92, 26, 0.6);
+      margin: 10px auto 5px;
+      border-color: rgb(122, 58, 15);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      &__select{
+        margin-top: 8px;
+        width: 25%;
+        min-width: 200px;
+        height: 40px;
+        cursor: pointer;
+      }
+      &__button{
+        margin: 8px auto 8px;
+        padding: 5px;
+        width: 25%;
+        min-width: 200px;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        &:hover{
+          background-color: #fff;
+          color: rgb(223, 121, 39);
+        }
+      }
+      &__box{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        line-height: 30px;
+        border-color: rgb(122, 58, 15);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        padding: 10px;
+        &__label{
+          min-width: 65px;
+        }
+        &__value{
+          text-align: right;
+          width: auto;
+          min-width: 30px;
+        }
+        &__unit{
+          width: 26px;
+          padding-left: 4px;
+          text-align: left;
+        }
+        &__icon{
+          height: 100px;
+          line-height: 100px;
+          text-align: center;
+          border-color: rgb(122, 58, 15);
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

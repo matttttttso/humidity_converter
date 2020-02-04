@@ -1,5 +1,5 @@
 $(function(){
-  $('#getForecast').on('click',function () {
+  $('#get-forecast').on('click',function () {
     
     let url1 = "http://api.openweathermap.org/data/2.5/weather?id=";
     let url2 = $('select[name=location] option:selected').val();
@@ -18,8 +18,8 @@ $(function(){
       // $("#location").html($('select[name=location] option:selected').text());
       $("#location").html(json.name);
       $("#description").html(json.weather[0].description);
-      $("#forecastTemp").html(Math.round(json.main.temp));
-      $("#forecastRh").html(json.main.humidity);
+      $("#forecast-temp").html(Math.round(json.main.temp));
+      $("#forecast-rh").html(json.main.humidity);
       switch (json.weather[0].main){
         case 'Clear':
           $("#icon").html("<img src='http://openweathermap.org/img/wn/01d@2x.png' >");

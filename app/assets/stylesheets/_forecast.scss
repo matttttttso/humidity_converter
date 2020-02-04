@@ -1,3 +1,7 @@
+.fa-spin{
+  color: #ff922b;
+}
+
 .converter-forecast{
   width: 90vw;
   margin: 10px auto;
@@ -54,7 +58,6 @@
       &__box{
         display: flex;
         justify-content: space-between;
-        padding-top: 5px;
         line-height: 30px;
         border-color: rgb(122, 58, 15);
         border-style: solid;

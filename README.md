@@ -11,15 +11,15 @@ AWS、EC2上にデプロイ済みですので上記リンクから試すこと�
 
 - [実際に試す][実際に試す]  
   - デプロイ先リンク：[Humidity Converter (http://18.178.160.115/)](http://18.178.160.115/)  
-- [概要](https://github.com/matttttttso/humidity_converter#%E6%A6%82%E8%A6%81)
-- [背景](https://github.com/matttttttso/humidity_converter#%E8%83%8C%E6%99%AF)
-- [開発環境・使用ツール](https://github.com/matttttttso/humidity_converter#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E4%BD%BF%E7%94%A8%E3%83%84%E3%83%BC%E3%83%AB)
-- [実装済みの主な機能](https://github.com/matttttttso/humidity_converter#%E5%AE%9F%E8%A3%85%E6%B8%88%E3%81%BF%E3%81%AE%E4%B8%BB%E3%81%AA%E6%A9%9F%E8%83%BD)
-- [今後実装していきたい機能](https://github.com/matttttttso/humidity_converter#%E4%BB%8A%E5%BE%8C%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%A6%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84%E6%A9%9F%E8%83%BD)
+- [概要](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E6%A6%82%E8%A6%81)
+- [背景](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E8%83%8C%E6%99%AF)
+- [開発環境・使用ツール](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E4%BD%BF%E7%94%A8%E3%83%84%E3%83%BC%E3%83%AB)
+- [実装済みの主な機能](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E5%AE%9F%E8%A3%85%E6%B8%88%E3%81%BF%E3%81%AE%E4%B8%BB%E3%81%AA%E6%A9%9F%E8%83%BD%E4%BB%95%E6%A7%98)
+- [今後実装していきたい機能](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E4%BB%8A%E5%BE%8C%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%A6%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84%E6%A9%9F%E8%83%BD%E4%BB%95%E6%A7%98)
 - [具体例][具体例]
 
-[実際に試す]:https://github.com/matttttttso/humidity_converter#%E5%AE%9F%E9%9A%9B%E3%81%AB%E8%A9%A6%E3%81%99
-[具体例]:https://github.com/matttttttso/humidity_converter#%E5%85%B7%E4%BD%93%E4%BE%8B
+[実際に試す]:https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E5%AE%9F%E9%9A%9B%E3%81%AB%E8%A9%A6%E3%81%99
+[具体例]:https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E5%85%B7%E4%BD%93%E4%BE%8B
 
 ## 概要
 
@@ -69,9 +69,6 @@ AWS、EC2上にデプロイ済みですので上記リンクから試すこと�
 
 ## 今後実装していきたい機能・仕様
 
-- リファクタリング、部分テンプレート化
-- トップページの実装（今はメイン機能のページのみ）
-- ビューを切り替えて情報をわかりやすく表示
 - 天気予報の地域入力方法追加（郵便番号、地名）
 - 天気予報の地域入力時にインクリメンタルサーチ機能
 - 天気予報の値を取得後に自動換算
@@ -82,6 +79,9 @@ AWS、EC2上にデプロイ済みですので上記リンクから試すこと�
   - 空気質([AirVisual API](https://www.airvisual.com/)など)
   - 洗濯物が乾くまでの概算の時間の算出
   - 温湿度の入力値によってアラート機能（熱中症、結露）
+- リファクタリング、部分テンプレート化
+- トップページの実装（今はメイン機能のページのみ）
+- ビューを切り替えて情報をわかりやすく表示
 
 
 ## 具体例
@@ -120,6 +120,5 @@ AWS、EC2上にデプロイ済みですので上記リンクから試すこと�
 
 ---
 
-[目次に戻る](https://github.com/matttttttso/humidity_converter#%E7%9B%AE%E6%AC%A1)  
+[目次に戻る](https://github.com/matttttttso/humidity_converter/blob/master/README.md#%E7%9B%AE%E6%AC%A1)  
 [実際に試す][実際に試す] 
-
